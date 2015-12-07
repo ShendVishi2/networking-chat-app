@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>iChat || uChat</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="chat.js"></script>
+    </head>
+    <body>
+        <ul id="messages"></ul>
+        <span id="notifyUser"></span>
+        <form action="" id="form" onsubmit="return submitfunction();">
+            <input type="textfield" id="user">
+            <input type="" id="message" autocomplete="off" onkeyup="notifyTyping();" palceholder="Your message here">
+            <input type="submit" id="btn-send-message" value="Send">
+            <input type="submit" id="btn-join-room" value="Join Room">
+            <input type="submit" id="btn-create-room" value="Create Room">
+
+        </form>
+    </body>
+</html>
